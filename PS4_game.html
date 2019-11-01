@@ -21,36 +21,54 @@
                 </ul>
                 <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
                     <li is="listview-li">
-                        <a href="#Content1" data-transition="slide">動作型(ACT))</a>
+                        <a href="#ACT" data-transition="slide">動作型(ACT)</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content2" data-transition="flip">策略遊戲(SLG)</a>
+                        <a href="#Game2" data-transition="flip">戰略遊戲(SLG)</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content3" data-transition="slideup">角色扮演(RPG)</a>
+                        <a href="#Game3" data-transition="slideup">角色扮演(RPG)</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content4" data-transition="slidedown">浩克 Hulk</a>
+                        <a href="#Game4" data-transition="slidedown">賽車型RCG</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content5" data-transition="pop">雷神索爾 Thor</a>
+                        <a href="#Game5" data-transition="pop">冒險遊戲(AVG)</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- 天氣之子 Page: Content  -->
-        <div id="Content1" data-role="page">
+        <!-- 動作型(ACT)-簡圖 Page: Content  -->
+        <div id="ACT" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <h3>Story</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Iron Man</div>
-                <div><img src="image/Weathering With You.jpg" style="width:100%;"></div>
+                <ul is="listview" data-role="listview" data-inset="true" style="margin:0 -15px;">
+                    <li is="listview-li" data-icon="false">
+                      <a href="#ACT_game">
+                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/831560/header_tchinese.jpg?t=1570585057" style="height:100%;">
+                        <h2 style="margin:17px 0 0 -10px;">無雙OROCHI 蛇魔３ Ultimate</h2>
+                      </a>
+                    </li>
+                    <li is="listview-li" data-icon="false">
+                      <a href="#ACT_game2">
+                        <img src="data:image/jpeg;base64,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" style="height:100%;">
+                        <h2 style="margin:17px 0 0 -10px;">隻狼：暗影雙死</h2>
+                      </a>
+                    </li>
+                    <li is="listview-li" data-icon="false">
+                      <a href="#ACT_game3">
+                        <img src="https://hb.imgix.net/4221fa767125ab6c6f892065579bb76121809d65.jpg?auto=compress,format&fit=crop&h=353&w=616&s=d50610572db666f1cc36049ba7885af5" style="height:100%;">
+                        <h2 style="margin:17px 0 0 -10px;">Shadow of the Tomb Raider</h2>
+                      </a>
+                    </li>
+                  </ul>
             </div>
         </div>
-        <!-- 美國隊長 Page: Content  -->
-        <div id="Content2" data-role="page">
+        <!-- 戰略遊戲(SLG) Page: Content  -->
+        <div id="Game2" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <h3>Story</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
@@ -60,8 +78,8 @@
                 <div><img src="image/Hellow world.jpg" style="width:100%;"></div>
             </div>
         </div>   
-        <!-- 蜘蛛人 Page: Content  -->
-        <div id="Content3" data-role="page">
+        <!-- 角色扮演(RPG) Page: Content  -->
+        <div id="Game3" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <h3>Story</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
@@ -71,8 +89,8 @@
                 <div><img src="image/hero03.jpg" style="width:100%;"></div>
             </div>
         </div>
-        <!-- 浩克 Page: Content  -->
-        <div id="Content4" data-role="page">
+        <!-- 賽車型RCG Page: Content  -->
+        <div id="Game4" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <h3>Story</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
@@ -83,8 +101,8 @@
             </div>
         </div>
         
-        <!-- 雷神索爾 Page: Content  -->
-        <div id="Content5" data-role="page">
+        <!-- 冒險遊戲(AVG) Page: Content  -->
+        <div id="Game5" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <h3>Story</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
@@ -94,5 +112,84 @@
                 <div><img src="image/hero05.jpg" style="width:100%;"></div>
             </div>
         </div>
+
+
+        <!-- ----------------------動作型(ACT)-簡圖--------------------------------------- -->
+        <div id="ACT_game" data-role="page">
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h3>ACT Game</h3>
+                <a class="ui-btn ui-btn-left" href="#ACT" data-transition="slide" data-direction="reverse">Back</a>
+            </div>
+            <div class="ui-content">
+                <div id="hero" style="font-size:40px; font-weight:bold; width:100%; text-align:center;">無雙OROCHI 蛇魔３</div>
+                <h2>介紹</h2>
+                <p>《無雙 OROCHI 蛇魔 3》的舞台是由《真 ‧ 三國無雙》、《戰國無雙》各系列，以及這次首度登場神明居住的「神界」所融合而成的世界。<br>
+                    登場角色包含 5 名新角色，總計有 170 名角色，《三國》與《戰國》的各路英雄加上神話的神都會同台競演，一同展開系列史上最大規模的戰鬥。這次也公開新角色－同時也是本作關鍵人物－「宙斯」的剪影。<br>
+                    在動作方面，新要素「神術」的加入，讓《無雙》系列獨有的爽快動作更為進化。另外，使用蘊含不可思議力量的「神器」，可以發動有別於《三國》、《戰國》的大魄力「神術」。
+                    </p>
+                <div><img src="https://p2.bahamut.com.tw/M/2KU/59/5ed56a09ef17b41317648de73710rkv5.JPG" style="width:100%;"></div>
+                <h3>《無雙》系列史上最多登場角色</h3>
+                <p>本作的登場角色人數為《無雙》系列史上最高。除了來自《真 ‧ 三國無雙 7 帝王傳》、《戰國無雙 4-II》的英雄之外，《無雙 OROCHI 蛇魔》系列原創角色也會登場。<br>
+                    另外再加上本作新加入的 5 名角色，將共有 170 名英雄一同展開壯闊的戰鬥。</p>
+                <div><img src="https://p2.bahamut.com.tw/M/2KU/25/eda346f63eced0367f528cea5f10s3d5.JPG" style="width:100%;"></div>
+                <h3>影片介紹</h3>
+                <div><iframe width="800" height="600" src="https://www.youtube.com/embed/iwVUBa6aX1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <a href="http://www.gamecity.com.tw/orochi3/">官網</a>
+            </div>
+        </div>
+        <div id="ACT_game2" data-role="page">
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h3>ACT Game</h3>
+                <a class="ui-btn ui-btn-left" href="#ACT" data-transition="slide" data-direction="reverse">Back</a>
+            </div>
+            <div class="ui-content">
+                <div id="hero" style="font-size:40px; font-weight:bold; width:100%; text-align:center;">隻狼：暗影雙死</div>
+                <h2>介紹</h2>
+                <p>遊戲故事背景為16世紀末的日本戰國時代。構建了一個充滿血腥暴力，人們無時無刻需要生死相搏的世界，玩家扮演著“獨臂之狼”，一個名譽不再、傷痕累累的忍者，一個從死亡邊緣撿回一命的戰士。
+                    你效忠守護繼承古老血統的年輕皇子，與危險的葦名一族以及眾多兇惡之徒為敵。年輕的皇子被抓走後，為挽回榮譽，你將不畏死亡，踏上危機四伏的征程。<br>
+                    探索生死衝突不斷的16世紀後期，感受殘酷的日本戰國時代，在黑暗、扭曲的世界，與威脅生命的敵人對峙。活用義手裝備各種致命武器，大顯忍者身手，在血腥對抗中潛行、上下穿梭，與敵人正面激烈交鋒。<br>
+                    復仇雪恥、奪回榮譽、巧妙殺敵。
+                    </p>
+                <div><img src="https://img.appledaily.com.tw/images/ReNews/20190322/640_e763aad968b4f1e7435f63466fdb60a8.jpg" style="width:100%;"></div>
+                <h3>遊戲特色</h3>
+                <p>     1.融合部分RPG元素、沙盒遊戲玩法、第三人稱以及動作冒險玩法。<br>
+                        2.根據日本神話產生的各種妖魔，描繪出一個虛構日本戰國末世。<br>
+                        3.開放式的無縫連接地圖，隨著玩家深入探索，能發現隱藏的道具、角色以及強敵戰鬥。<br>
+                        4.前所未見的對決系統：刀劍拼搏跟招架檔格，主角的義肢手臂可裝載不同的忍具，演繹出五花八門的戰鬥風格。<br>
+                        5.使用獨特的勾索，能在立體場景上面自由擺盪、飛躍，做出超乎想像的移動與伏襲。
+                    </p>
+                <div><img src="https://img.4gamers.com.tw/ckfinder/images/Why%20Lee/News/2019.04/ss_3f5de1c959ef0d723c84b7b641aaadec0791df33.jpg?versionId=IuK_1yRBfB0ZU2uUjJNCMdh6nuw0aZs5" style="width:100%;"></div>
+                <h3>影片介紹</h3>
+                <div><iframe width="800" height="600" src="https://www.youtube.com/embed/PUKHa65tDic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <a href="https://www.sekiro.jp/">官網</a>
+            </div>
+        </div>
+        <div id="ACT_game3" data-role="page">
+                <div data-role="header" data-position="fixed" data-theme="b">
+                    <h3>ACT Game</h3>
+                    <a class="ui-btn ui-btn-left" href="#ACT" data-transition="slide" data-direction="reverse">Back</a>
+                </div>
+                <div class="ui-content">
+                    <div id="hero" style="font-size:40px; font-weight:bold; width:100%; text-align:center;">Shadow of the Tomb Raider</div>
+                    <h2>介紹</h2>
+                    <p>一同見證蘿拉・卡芙特成為古墓奇兵的關鍵時刻。在《Shadow of the Tomb Raider》中，蘿拉必須制霸一座致命的叢林，克服恐怖的古墓，並且奮力熬過最黑暗的時刻。在她與時間競賽，不讓世界陷入馬雅末日的同時，蘿拉最終將迎接她的命運，成為古墓奇兵。<br>
+                       在地球上最致命的地方求生：制霸無情的叢林，想盡辦法存活下來。探索充滿裂隙與地下深處地道系統的水下環境。<br>
+                       與叢林合而為一：蘿拉必須善用叢林，如同美洲豹般發動奇襲、隱藏自己，用泥巴做為保護色，並讓敵人心生恐懼，種下混亂的種子。<br>
+                       發掘黑暗的高難度古墓：古墓比以往都來得更加駭人，需要高超的跋涉技巧才能抵達，裡頭更是充滿著致命謎團。<br>
+                       揭開活生生的歷史：發掘秘密都市，並探索系列作有史以來最龐大的據點。
+                        </p>
+                    <div><img src="https://s1.gaming-cdn.com/images/products/2487/screenshot/shadow-of-the-tomb-raider-wallpaper-5.jpg" style="width:100%;"></div>
+                    <h3>遊戲特色</h3>
+                    <p>     1.在地球上最致命的地方求生：制霸無情的叢林，想盡辦法存活下來。探索充滿裂隙與地下深處地道系統的水下環境。<br>
+                            2.與叢林合而為一：火力和人數遠不及敵方的蘿拉，必須善用叢林，如同美洲豹般發動奇襲、隱藏自己，用泥巴做為保護色，並讓敵人心生恐懼，種下混亂的種子。<br>
+                            3.發掘黑暗的高難度古墓：古墓比以往都來得更加駭人，需要高超的跋涉技巧才能抵達，裡頭更是充滿著致命謎團。<br>
+                            4.揭開活生生的歷史：發掘秘密都市，並探索系列作有史以來最龐大的據點。
+                        </p>
+                    <div><img src="https://o.aolcdn.com/images/dims?quality=85&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F1c44c3553a1e5e8ef9c52635d3f1e44a%2F206720475%2Ftomb-ed.jpg&client=amp-blogside-v2&signature=386e98fdd091884b54b6a81cfe132eefb78747ee" style="width:100%;"></div>
+                    <h3>影片介紹</h3>
+                    <div><iframe width="800" height="600" src="https://www.youtube.com/embed/LPLLLjSTHwc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <a href="https://tombraider.square-enix-games.com/en-us">官網</a>
+                </div>
+            </div>
 </body>
 </html>
