@@ -7,91 +7,284 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <title>Movies</title>
+    <title>Motorcycle</title>
 </head>
 <body>
     <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
             <div is="header" data-role="header" data-position="fixed" data-theme="b">
-                <h3>New Movies</h3>
+                <h3>New Motorcycle</h3>
                 <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
             </div>
             <div is="content" role="main" class="ui-content">
                 <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
-                    <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">Heros List</li>
+                    <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">推薦檔車</li>
                 </ul>
                 <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
                     <li is="listview-li">
-                        <a href="#Content1" data-transition="slide">天氣之子 Weathering With You</a>
+                        <a href="#motorcycle" data-transition="slide">SUZUKI GSX R150 ABS</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content2" data-transition="flip">HELLO WORLD</a>
+                            <a href="#motorcycle2" data-transition="slideup">SUZUKI GSX S150 ABS</a>
+                        </li>
+                    <li is="listview-li">
+                        <a href="#motorcycle3" data-transition="flip">AEON MY150</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content3" data-transition="slideup">蜘蛛人 Spider Man</a>
-                    </li>
-                    <li is="listview-li">
-                        <a href="#Content4" data-transition="slidedown">浩克 Hulk</a>
-                    </li>
-                    <li is="listview-li">
-                        <a href="#Content5" data-transition="pop">雷神索爾 Thor</a>
+                        <a href="#motorcycle4" data-transition="slidedown">野狼SB300CR ABS</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- 天氣之子 Page: Content  -->
-        <div id="Content1" data-role="page">
+        <!-- SUZUKI GSX R150 ABS Page: Content  -->
+        <div id="motorcycle" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>擋車</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Iron Man</div>
-                <div><img src="image/Weathering With You.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">SUZUKI GSX R150 ABS</div>
+                <div><img src="http://www.suzukimotor.com.tw/images/product/gsx-r150/bw5_angle_02.jpg" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                    SUZUKI GSX-R 系列在過去30年中，全球銷售早已突破百萬台，已經成為跑車的代名詞，GSX-R 系列車種都是 SUZUKI 工程師投注生命與熱情，將 GSX-R 當作生命中一部分來創造，<br>
+                    造就每一台 GSX-R 車種在不同級距成為無法撼動的地位，GSX-R150 輕量化車身搭載強悍動力引擎，將帶給你同級距最強，擁有R之靈魂的最強輕檔跑車。
+                </p>
+                <h3>詳細規格</h3><br><br>
+                 <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive" style="margin:-50px 0 0;">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">引擎形式</th>
+                            <th data-priority="2">排氣量</th>
+                            <th data-priority="3">缸徑/衝程</th>
+                            <th data-priority="4">壓縮比</th>
+                            <th data-priority="5">最大馬力</th>
+                            <th data-priority="6">最大扭力</th>
+                            <th data-priority="7">傳動系統</th>
+                            <th data-priority="8">輪胎尺寸</th>
+                            <th data-priority="9">煞車形式</th>
+                            <th data-priority="10">長 x 寬 x 高</th>
+                            <th data-priority="11">軸距</th>
+                            <th data-priority="12">最低離地高度</th>
+                            <th data-priority="13">座位高度</th>
+                            <th data-priority="14">裝備重量</th>
+                            <th data-priority="15">油箱容量</th>
+                            <th data-priority="16">產地</th>
+                        </tr>
+                        <tr></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DOCH 4V 水冷引擎</td>
+                            <td>147 C.C.</td>
+                            <td>62.0mm × 48.8 mm</td>
+                            <td>11.5 : 1</td>
+                            <td>19.2 PS / 10500 rpm</td>
+                            <td>14.0 Nm / 9000 rpm</td>
+                            <td>往復式6檔</td>
+                            <td>(F)	90 / 80 - 17 M/C
+                                (R)130 / 70 - 17 M/C
+                            </td>
+                            <td>(前)ABS + 290 mm 單碟盤
+                            (後)ABS + 187 mm 單碟盤
+                            </td>
+                            <td>2,000 mm x 700 mm x 1,070 mm</td>
+                            <td>1,300 mm</td>
+                            <td>160 mm</td>
+                            <td>785 mm</td>
+                            <td>136 kg</td>
+                            <td>11 L</td>
+                            <td>印尼</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="http://www.suzukimotor.com.tw/product/gsx-r150/intro.html">官網</a>
             </div>
         </div>
-        <!-- 美國隊長 Page: Content  -->
-        <div id="Content2" data-role="page">
+        <!-- SUZUKI GSX S150 ABS Page: Content  -->
+        <div id="motorcycle2" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>擋車</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Iron Man</div>
-                <div><img src="image/Hellow world.jpg" style="width:100%;"></div>
-            </div>
-        </div>   
-        <!-- 蜘蛛人 Page: Content  -->
-        <div id="Content3" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
-                <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
-            </div>
-            <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Spider Man</div>
-                <div><img src="image/hero03.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">SUZUKI GSX S150 ABS</div>
+                <div><img src="http://www.suzukimotor.com.tw/images/product/gsx-s150/yvu_angle_02.jpg" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                    SUZUKI GSX-R 系列在過去30年中，全球銷售早已突破百萬台，已經成為跑車的代名詞。GSX-R 系列車種都是 SUZUKI 工程師投注生命與熱情，將 GSX-R 當作生命中一部分來創造，造就每一台 GSX-R 車種在不同級距成為無法撼動的地位。<br>
+                    我們誠摯的邀請您一同體驗輕量級街車最強悍的 GSX-S150，輕量化車身搭載強悍動力引擎，帶給您同級距最強，擁有 R 之靈魂的最強輕檔街車。
+                </p>
+                <h3>詳細規格</h3><br><br>
+                    <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive" style="margin:-50px 0 0;">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">引擎形式</th>
+                            <th data-priority="2">排氣量</th>
+                            <th data-priority="3">缸徑/衝程</th>
+                            <th data-priority="4">壓縮比</th>
+                            <th data-priority="5">最大馬力</th>
+                            <th data-priority="6">最大扭力</th>
+                            <th data-priority="7">傳動系統</th>
+                            <th data-priority="8">輪胎尺寸</th>
+                            <th data-priority="9">煞車形式</th>
+                            <th data-priority="10">長 x 寬 x 高</th>
+                            <th data-priority="11">軸距</th>
+                            <th data-priority="12">最低離地高度</th>
+                            <th data-priority="13">座位高度</th>
+                            <th data-priority="14">裝備重量</th>
+                            <th data-priority="15">油箱容量</th>
+                            <th data-priority="16">產地</th>
+                        </tr>
+                        <tr></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DOCH 4V 水冷引擎</td>
+                            <td>147 C.C.</td>
+                            <td>62.0mm × 48.8 mm</td>
+                            <td>11.5 : 1</td>
+                            <td>19.2 PS / 10500 rpm</td>
+                            <td>14.0 Nm / 9000 rpm</td>
+                            <td>往復式6檔</td>
+                            <td>(F)	90 / 80 - 17 M/C
+                                (R)130 / 70 - 17 M/C
+                            </td>
+                            <td>(前)ABS + 290 mm 單碟盤
+                            (後)ABS + 187 mm 單碟盤
+                            </td>
+                            <td>2,000 mm x 745 mm x 1,035 mm</td>
+                            <td>1,300 mm</td>
+                            <td>155 mm</td>
+                            <td>785 mm</td>
+                            <td>136 kg</td>
+                            <td>11 L</td>
+                            <td>印尼</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="http://www.suzukimotor.com.tw/product/gsx-s150/intro.html">官網</a>
             </div>
         </div>
-        <!-- 浩克 Page: Content  -->
-        <div id="Content4" data-role="page">
+        <!-- AEON MY150 Page: Content  -->
+        <div id="motorcycle3" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>擋車</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Hulk</div>
-                <div><img src="image/hero04.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">AEON MY150</div>
+                <div><img src="https://s.yimg.com/zp/MerchandiseImages/6E4EC30663-SP-6955695.jpg" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                        AEON MY 150在配備上則是國內首創14吋鋁合金輪圈與數位藍光儀表板內建檔位顯示器，加上單槍中置可微調式避震器，此外除了強勢的配備，引擎為更加成熟的16位元OHC引擎，內置平衡軸及輕量化設計，低震度的表現更能享受盡情操駕MY 150的樂趣，車身線條則經過精細設計展現獨特不羈風格，更是男女皆宜騎乘，耍帥權利男女平等！<br>
+                        MY 150在豔陽下閃耀奪目，適合活力十足的陽光型男和活力靓女。
+                </p>
+                <h3>詳細規格</h3><br><br>
+                    <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive" style="margin:-50px 0 0;">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">長 x 寬 x 高</th>
+                            <th data-priority="2">軸距</th>
+                            <th data-priority="3">乾燥重量</th>
+                            <th data-priority="4">油箱容量</th>
+                            <th data-priority="5">輪胎尺寸</th>
+                            <th data-priority="6">機油容量</th>
+                            <th data-priority="7">引擎形式</th>
+                            <th data-priority="8">排氣量</th>
+                            <th data-priority="9">最高馬力</th>
+                            <th data-priority="10">傳動系統</th>
+                            <th data-priority="11">離合器</th>
+                            <th data-priority="12">避震系統</th>
+                            <th data-priority="13">煞車系統</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1770 mm x 770 mm x 1150 mm</td>
+                            <td>12220mm</td>
+                            <td>118kg</td>
+                            <td>6L</td>
+                            <td>(前)110/80-14(後)120/80-14</td>
+                            <td>0.9L</td>
+                            <td>四行程空冷單汽缸(OHC)</td>
+                            <td>150.1cc</td>
+                            <td>14ps/8,000rpm</td>
+                            <td>國際5檔鍊條傳動</td>
+                            <td>濕式多片式</td>
+                            <td>前/潛望鏡式 後/中置單槍</td>
+                            <td>前/碟煞(256mm) 後/碟煞(190mm)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="http://www.suzukimotor.com.tw/product/gsx-r150/intro.html">官網</a>
             </div>
         </div>
-        
-        <!-- 雷神索爾 Page: Content  -->
-        <div id="Content5" data-role="page">
+        <!-- 野狼SB300CR ABS Page: Content  -->
+        <div id="motorcycle4" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>擋車</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Thor</div>
-                <div><img src="image/hero05.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">野狼SB300CR ABS</div>
+                <div><img src="https://autos.yahoo.com.tw/y/r/w1200/iw/MMT/bike/029d130477065abcef69e7b7047279ad_1200.jpg" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                    SYM致力於產品力之革新，並擴充紅、黃牌機種陣容，2015年登場的經典傳奇野狼SB300與SB300CR，已是市場詢問度最高的國產重型檔車，本車同時有街車與Cafe Racer兩種選擇，加上優異的動力與操駕，來個長途之旅可說是再愜意不過的事情！<br>
+                    另外，野狼SB300全系列都配備ABS系統，在銷售上相對更能滿足不同客層的需求！
+                </p>
+                <h3>詳細規格</h3><br><br>
+                    <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive" style="margin:-50px 0 0;">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">長寬高(mm)</th>
+                            <th data-priority="2">軸距(mm)</th>
+                            <th data-priority="3">排氣量(CC)</th>
+                            <th data-priority="4">引擎形式</th>
+                            <th data-priority="5">輪胎(前)</th>
+                            <th data-priority="6">輪胎(後)</th>
+                            <th data-priority="7">整備重量(kg)</th>
+                            <th data-priority="8">前煞系統</th>
+                            <th data-priority="9">前煞車直徑(φ)</th>
+                            <th data-priority="10">後煞系統</th>
+                            <th data-priority="11">前輪材質</th>
+                            <th data-priority="12">後輪材質</th>
+                            <th data-priority="13">前大燈</th>
+                            <th data-priority="14">定位燈</th>
+                            <th data-priority="15">尾燈&煞車燈</th>
+                            <th data-priority="16">前方向燈</th>
+                            <th data-priority="17">後方向燈</th>
+                            <th data-priority="18">儀錶板</th>
+                            <th data-priority="19">主開關</th>
+                            <th data-priority="20">坐墊開啟</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020 x 818 x 1097</td>
+                            <td>1335</td>
+                            <td>278 CC</td>
+                            <td>四衝,四閥,水冷</td>
+                            <td>110/70 17</td>
+                            <td>140 /70 17</td>
+                            <td>176.0 kg</td>
+                            <td>碟煞+ABS煞車系統</td>
+                            <td>φ288</td>
+                            <td>碟煞+ABS煞車系統</td>
+                            <td>鋁圈</td>
+                            <td>鋁圈</td>
+                            <td>12 V 60W / 55W × 1</td>
+                            <td>12 V 5W × 1</td>
+                            <td>12 V 5W / 21W × 1</td>
+                            <td>12 V 10W × 4</td>
+                            <td>12 V 10W × 4</td>
+                            <td>機械式 + 液晶式</td>
+                            <td>四合一中控鎖</td>
+                            <td>車側鑰匙孔</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="http://tw.sym-global.com/showroom/motorcycle/motor.php?id=51">官網</a>
             </div>
         </div>
 </body>
