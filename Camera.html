@@ -7,91 +7,528 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <title>Movies</title>
+    <style>
+            .ui-block-a, .ui-block-b{
+                background-color: lightgray;
+                border: 1px solid black;
+                height: 25px;
+                text-align: center;
+            }
+            .ui-block-c{
+                background-color: lightgray;
+                border: 1px solid black;
+                height: 150px;
+                width:150px;
+                text-align: center;
+                font-weight: bold;
+                }
+            </style>
+    <title>Camera</title>
 </head>
 <body>
     <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
             <div is="header" data-role="header" data-position="fixed" data-theme="b">
-                <h3>New Movies</h3>
+                <h3>New Camera</h3>
                 <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
             </div>
             <div is="content" role="main" class="ui-content">
                 <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
-                    <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">Heros List</li>
+                    <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">照相機人氣排行</li>
                 </ul>
                 <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
                     <li is="listview-li">
-                        <a href="#Content1" data-transition="slide">天氣之子 Weathering With You</a>
+                        <a href="#camera" data-transition="slide">15000元以下</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content2" data-transition="flip">HELLO WORLD</a>
+                        <a href="#camera2" data-transition="flip">15000~30000元</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content3" data-transition="slideup">蜘蛛人 Spider Man</a>
-                    </li>
-                    <li is="listview-li">
-                        <a href="#Content4" data-transition="slidedown">浩克 Hulk</a>
-                    </li>
-                    <li is="listview-li">
-                        <a href="#Content5" data-transition="pop">雷神索爾 Thor</a>
+                        <a href="#camera3" data-transition="slideup">30000元以上</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- 天氣之子 Page: Content  -->
-        <div id="Content1" data-role="page">
+        <!-- 15000元以下 Page: Content  -->
+        <div id="camera" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>照相機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Iron Man</div>
-                <div><img src="image/Weathering With You.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">3款人氣推薦</div>
+                <h3>這個區段主要為: 代替智慧型手機的照相功能</h3>
+                <div>
+                    <h1>1.FUJIFILM富士 XF10</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26184203/img_main03-1-300x161.jpg" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>很難想像在這個價位帶中可以看見擁有 APS-C 片幅的相機，而且不管是重量或體積都非常輕巧，而且造型非常簡約復古，除了黑色以外還有香檳金搭配荔枝蒙皮握把的款式可以選擇。<br>
+                       為了符合隨身機的理念，使用28mm定焦鏡頭，是街拍跟日常生活最常用的焦段之一，而且還特別設計了街拍模式，能夠直接固定焦距跟光圈，簡單拍攝出有質感的照片。<br>
+                       另外3吋的液晶螢幕也有觸控操作跟對焦功能，非常方便，如果對大片幅相機有憧憬但預算有點低，可以嘗試購買這款商品，隨時捕捉街上的風景喔。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                           <div class="ui-block-b" style="background-color:white">2,420萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                           <div class="ui-block-b" style="background-color:white">APS-C</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                           <div class="ui-block-b" style="background-color:white">28mm定焦</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                           <div class="ui-block-b" style="background-color:white">F2.8</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                           <div class="ui-block-b" style="background-color:white">10cm</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                           <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                           <div class="ui-block-b" style="background-color:white">100～51,200</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                           <div class="ui-block-b" style="background-color:white">1／4,000、電子快門1／16,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                           <div class="ui-block-b" style="background-color:white">330張照片、70分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                           <div class="ui-block-b" style="background-color:white">279g</div>
+                    </div>
+                    <a href="http://www.fujifilm.com.tw/personal/digitalcamera/fujifilm_xf10/index.html">FUJIFILM富士 XF10官方網站</a>   
+                </div>
+                <div>
+                    <h1>2.Canon佳能 G7X markII</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26184002/fc54e82dac214218993365522272bdbf_powershot-g7-x-mark-ii-300x265.png" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>僅僅300g出頭的重量以及最便宜不到15,000元的價格，功能卻是一個不少。24mm～100mm的等效焦段囊括絕大部分常用的場景，廣角端更是足以勝任拍攝風景的任務，而且最大光圈也來到F1.8，<br>
+                        搭配上高 ISO 感光度，就算在晚上拍攝也能完美捕捉畫面，液晶螢幕也有上翻180°、下翻45°的高度彈性，多角度拍攝也不怕。<br>
+                        方便的 Wi-Fi 功能當然也沒有少，使用專屬 app 除了瀏覽跟下載相片以外，更可以用來遙控相機，想要一台全方位的隨身相機預算卻不足嗎？這款商品絕對是一個好選擇。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">2,010萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">1吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">24mm~100mm，4.2倍</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F1.8～F2.8</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">5cm</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">125～12,800</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／2,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">265張照片、省電模式335張</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">319g</div>
+                    </div>
+                    <a href="https://tw.canon/zh_TW/consumer/powershot-g7-x-mark-ii/product">Canon佳能 G7X markII官方網站</a>    
+                </div>
+                <div>
+                    <h1>3.Nikon尼康 COOLPIX A900</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26183744/145630397458819000638.png" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>身為一款具有35倍光學變焦加上2倍數位變焦，最遠等效焦段可以達到1,680mm的數位相機，重量卻只有少少的300g左右，而且體積輕巧，可以很容易就收進口袋中，完全不占空間。<br>
+                        另外採用低功耗藍牙的連接技術，只要跟智慧型手機連線，拍攝的所有照片都會自動傳送到手機中，不用特地拿出手機來操作，非常適合常常需要拍攝遠處物體但手上預算很低的使用者。<br>
+                        不過因為主打望遠鏡頭，不管是片幅大小或是光圈等等規格都不盡理想，不僅不適合街拍，也不適合在昏暗的場景下手持拍攝。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">2,030萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">1／2.3</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">24mm~840mm，35倍</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F3.4～F6.9</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">1cm（微距模式）</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">80～1,600</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／2,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">270張照片、50分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">298g</div>
+                    </div>
+                    <a href="https://www.coolpix.com.tw/shop/%E6%95%B8%E4%BD%8D%E7%9B%B8%E6%A9%9F/430.html">Nikon尼康 COOLPIX A900官方網站</a>   
+                </div>
             </div>
         </div>
-        <!-- 美國隊長 Page: Content  -->
-        <div id="Content2" data-role="page">
+        <!-- 15000~30000元 Page: Content  -->
+        <div id="camera2" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>照相機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Iron Man</div>
-                <div><img src="image/Hellow world.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">3款人氣推薦</div>
+                <h3>這個區段主要為: 比手機更好的畫質及操作性</h3>
+                <div>
+                    <h1>1. Panasonic國際牌 DC-LX100 M2</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26202235/0C610A1302-Product-22270293-300x300.jpg" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>採用比1吋感光元件還要大一級的 M4／3 片幅無低通濾鏡 CMOS，能夠拍出銳利度非常高的相片，而且整體機身的轉盤非常多，如果常用單眼相機的話應該很快就能熟悉各項操作，最令人眼睛一亮的是最大光圈竟然有F1.7，<br>
+                        加上與光學大廠 LEICA（徠卡）合作的鏡頭，以及獨家4K影片及相片「先拍照後對焦」的功能，整體來說非常具有吸引力。<br>
+                        如果對1吋感光元件還不滿足，而且對4K攝錄影有需求的話，這款可以用較低預算取得的相機絕對是一個非常不錯的選擇。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">1,700萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">M4／3</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">24mm~75mm，3.1倍</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F1.7～F2.8</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">3cm（微距模式）</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">100～25,600</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／4,000、電子快門1／16,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">340張照片、40分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">392g</div>
+                    </div>
+                    <a href="https://www.panasonic.com/tw/consumer/digital-av/lumix/compact-camera/dc-lx100m2.html">Panasonic國際牌 DC-LX100 M2官方網站</a>    
+                </div>
+                <div>
+                    <h1>2.SONY索尼 DSC-RX100 III</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26201558/600x400_01-3-e1545822979126-300x241.jpg" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>SONY 的 RX100 隨身機系列前前後後總共出了6代，即使價格一代比一代高，但其實每代商品都有不可取代的地方，像是這款3代的隨身相機首次加入了可收納的電子觀景窗，<br>
+                        即使取消了熱靴卻將閃光燈給加了回來，對於追求輕便，不想攜帶其他相機配件的使用者來說無疑是個好消息。除此之外，24mm～70mm的標準焦段也非常好用，一顆電池可拍300多張照片，出門一天都夠用。<br>
+                        在體積、價格跟功能性等部分都取得了一個非常好的平衡點，絕對是物超所值，值得擁有的一款好商品。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">2,010萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">1吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">24mm~70mm，2.9倍</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F1.8～F2.8</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">5cm</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">125～12,800</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／2,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">320張照片、160分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">290g</div>
+                    </div>
+                    <a href="https://store.sony.com.tw/product/DSC-RX100M3">SONY索尼 DSC-RX100 III官方網站</a>   
+                </div>
+                <div>
+                    <h1>3.RICOH理光 GR II</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26200916/main_img_04-e1545822727708-300x253.jpg" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>這款經典而且非常具有代表性的隨身數位相機擁有 APS-C 片幅，在剛推出時甚至有「當代最強口袋機」的稱呼，250g加上小巧的機身，可以放在口袋中隨時帶著走，<br>
+                        除了拍出來的色調非常吸引人以外，比起前代也多了 Wi-Fi 連線跟6種不同的濾鏡模式可以運用，很容易就可以拍出具有個人風格的相片，而且機背的按鍵配置跟操作性也不差，真的是街拍人士理想中的相機。<br>
+                        不過最為人詬病的是對焦不太精準，很容易就會失焦導致照片模糊，而且目前最新款的 GR III 已經發表，預計於2019年推出，所以將這款商品擺在排名最末的位置。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">1,690萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">	APS-C</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">28mm定焦</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F2.8</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">10cm（微距模式）</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">100～25,600</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／4,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">320張照片、45分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">251g</div>
+                    </div>
+                    <a href="http://www.pentax.com.tw/index.php?do=prod&id=836">RICOH理光 GR II官方網站</a>   
+                </div>
             </div>
         </div>   
-        <!-- 蜘蛛人 Page: Content  -->
-        <div id="Content3" data-role="page">
+        <!-- 30000元以上 Page: Content  -->
+        <div id="camera3" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>照相機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Spider Man</div>
-                <div><img src="image/hero03.jpg" style="width:100%;"></div>
-            </div>
-        </div>
-        <!-- 浩克 Page: Content  -->
-        <div id="Content4" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
-                <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
-            </div>
-            <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Hulk</div>
-                <div><img src="image/hero04.jpg" style="width:100%;"></div>
-            </div>
-        </div>
-        
-        <!-- 雷神索爾 Page: Content  -->
-        <div id="Content5" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
-                <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
-            </div>
-            <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Thor</div>
-                <div><img src="image/hero05.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">3款人氣推薦</div>
+                <h3>這個區段主要為: 媲美單眼的畫質</h3>
+                <div>
+                    <h1>1.SONY索尼 DSC-RX1R II</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26203936/2018.12.26-19.38.png" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>這款相機在數位相機史上絕對佔有一席之地，因為它可是全球首款使用全片幅感光元件的隨身相機，而且不只是技術宣示，而是成為消費型的機種，即使價格非常驚人，<br>
+                        但不論是高達 4,240萬畫素的感光元件、35mm F2的蔡司認證鏡頭，甚至是其他像是觀景窗等規格都容納在小小一台機身上，而且還能拍攝無壓縮的14bit RAW檔，絕對能讓原本扛著一台重重單眼的使用者瘋狂。<br>
+                        R 系列的相機一直以高畫素、高解析度而且精緻的成像品質著稱，這款象徵全片幅相機已經成為一般消費者取向而非職業玩家專用的機種絕對要在推薦商品中有一席之地。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">4,240萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">全片幅</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">35mm定焦</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F2</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">14cm（微距模式）</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">50～102,400</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／4,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">220張照片、20分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">507g</div>
+                    </div>
+                    <a href="https://store.sony.com.tw/product/DSC-RX1RM2">SONY索尼 DSC-RX1R II官方網站</a>   
+                </div>
+                <div>
+                    <h1>2.FUJIFILM富士 X100F</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26203441/img_main01-1-e1545824123692-300x179.jpg" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>X100 系列一直以 APS-C 片幅隨身機中頂級的畫質為傲，捨棄便利的可變焦段而採用35mm，最大光圈F2的定焦鏡頭，帶來的是清晰而且富有層次感的相片，<br>
+                        而且富士感光元件接近底片的色調以及精準的白平衡更讓照片的質感直線上升，從初代就沿用的光學電子混合觀景窗也能讓曾經使用過單眼或是底片相機的玩家體會到最初的樂趣。<br>
+                        各項規格跟功能都開得十分漂亮，幾乎上打單眼相機，搭配上好攜帶的體積，非常適合已經擁有單眼相機，不滿足小片幅相機畫質的攝影玩家，拿來當作備機絕對不會失望喔。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">2,430萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">APS-C</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">35mm定焦</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F2</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">10cm</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">100～51,200</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／4,000、電子快門1／32,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">390張照片、60分鐘影片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">469g</div>
+                    </div>
+                    <a href="http://www.fujifilm.com.tw/personal/digitalcamera/fujifilm_x100f/index.html">FUJIFILM富士 X100F官方網站</a>   
+                </div>
+                <div>
+                    <h1>3.Canon佳能 PowerShot G1 X Mark III</h1>
+                    <img src="https://my-best.tw/wp-content/uploads/2018/12/26203134/powershotg1markiii-large1-300x265.png" style="width:100%;"/>
+                    <h3>介紹</h3>
+                    <p>用習慣 Canon（佳能）單眼的使用者，看到這款隨身相機應該會覺得非常親切。使用 APS-C 大片幅感光元件，各項操作方式都跟 EOS 系列的單眼相機如出一轍，<br>
+                        除了採用標準焦段，最大光圈F2.8的鏡頭以外，其他諸如 Wi-Fi 連線功能、NFC 近場通訊、觀景窗等規格一應俱全，另外還可以選購潛水殼，最深可達40米，對於想要用隨身相機代替單眼的使用者來說是非常好的選擇。<br>
+                        但續航力的部分稍嫌弱了一點，而且最快的快門速度只有1／2,000，沒有墊子快門可選，要在大太陽底下拍照的話亮度可能會過高，需要稍微調整一下參數才能放心拍攝。
+                    </p>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">畫素</div>
+                            <div class="ui-block-b" style="background-color:white">2,420萬</div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">感光元件尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">APS-C</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">等效焦段及倍率	</div>
+                            <div class="ui-block-b" style="background-color:white">24mm~72mm，3倍</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最大光圈</div>
+                            <div class="ui-block-b" style="background-color:white">F2.8～F5.6</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最近對焦距離</div>
+                            <div class="ui-block-b" style="background-color:white">10cm</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">螢幕尺寸</div>
+                            <div class="ui-block-b" style="background-color:white">3吋</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">ISO 感光度</div>
+                            <div class="ui-block-b" style="background-color:white">100～25,600</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">最高快門速度</div>
+                            <div class="ui-block-b" style="background-color:white">1／2,000</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">續航力</div>
+                            <div class="ui-block-b" style="background-color:white">200張照片、省電模式250張照片</div>
+                    </div> 
+                    <div class="ui-grid-a">
+                            <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">重量</div>
+                            <div class="ui-block-b" style="background-color:white">399g</div>
+                    </div>
+                    <a href="https://tw.canon/zh_TW/consumer/powershot-g1-x-mark-iii/product">Canon佳能 PowerShot G1 X Mark III官方網站</a>    
+                </div>
             </div>
         </div>
 </body>

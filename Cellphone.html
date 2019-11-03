@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-block-a, .ui-block-b{
+            background-color: lightgray;
+            border: 1px solid black;
+            height: 25px;
+            text-align: center;
+        }
+        .ui-block-c{
+            background-color: lightgray;
+            border: 1px solid black;
+            height: 150px;
+            width:150px;
+            text-align: center;
+            font-weight: bold;
+            }
+        </style>
     <title>Cellphone</title>
 </head>
 <body>
@@ -17,23 +33,20 @@
             </div>
             <div is="content" role="main" class="ui-content">
                 <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
-                    <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">熱門手機</li>
+                    <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">熱門智慧型手機</li>
                 </ul>
                 <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
                     <li is="listview-li">
                         <a href="#cellphone" data-transition="slide">Apple iPhone 11</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content2" data-transition="flip">HELLO WORLD</a>
+                        <a href="#cellphone2" data-transition="flip">Samsung Galaxy Note 10+</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content3" data-transition="slideup">蜘蛛人 Spider Man</a>
+                        <a href="#cellphone3" data-transition="slideup">ASUS ROG Phone 2</a>
                     </li>
                     <li is="listview-li">
-                        <a href="#Content4" data-transition="slidedown">浩克 Hulk</a>
-                    </li>
-                    <li is="listview-li">
-                        <a href="#Content5" data-transition="pop">雷神索爾 Thor</a>
+                        <a href="#cellphone4" data-transition="slidedown">SONY Xperia 5</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +54,7 @@
         <!-- Apple iPhone 11 Page: Content  -->
         <div id="cellphone" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>手機</h3>
+                <h3>智慧型手機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
@@ -53,52 +66,500 @@
                     蘋果於台灣時間 9 月 11 日在蘋果園區的賈伯斯劇院舉辦特別發表會，正式對外公布 2019 年新款 iPhone，型號與數量一如外界預期有三款：iPhone 11、iPhone 11 Pro 以及 iPhone 11 Pro Max，分別為 XR、XS 與 XS Max 的後繼款式。
                 </p>
                 <h3>詳細規格</h3><br><br>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">尺寸</div>
+                   <div class="ui-block-b">150.9 x 75.7 x 8.3 mm</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">重量</div>
+                   <div class="ui-block-b" style="background-color:white">194g</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">SIM 卡</div>
+                   <div class="ui-block-b">nanoSIM</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">防水防塵</div>
+                   <div class="ui-block-b" style="background-color:white">IP68</div>
+                </div>
+                <div class="ui-grid-a" id="Screen">
+                    <div class="ui-block-c">螢幕技術</div>
+                    <script>
+                        var Screen_array=['6.1 吋 1792 x 828 IPS TFT','326ppi 像素密度','1400:1 對比度','原彩顯示、廣色域顯示 (P3)','觸覺回饋觸控','625 nits 最高亮度'];
+                        for(var i=0;i<Screen_array.length;i++)$("#Screen").append('<div class="ui-block-b">'+Screen_array[i]+'</div>');
+                    </script>
+                    <!-- <div class="ui-block-b">6.1 吋 1792 x 828 IPS TFT</div>
+                    <div class="ui-block-b">326ppi 像素密度</div>
+                    <div class="ui-block-b">1400:1 對比度</div>
+                    <div class="ui-block-b">原彩顯示、廣色域顯示 (P3)</div>
+                    <div class="ui-block-b">觸覺回饋觸控</div>
+                    <div class="ui-block-b">625 nits 最高亮度</div> -->
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">作業系統</div>
+                   <div class="ui-block-b" style="background-color:white">iOS</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">處理器</div>
+                   <div class="ui-block-b">六核心 A13</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶體</div>
+                   <div class="ui-block-b" style="background-color:white">4GB RAM</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">儲存空間</div>
+                   <div class="ui-block-b">128GB (實際可用空間較此值少)</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶卡</div>
+                   <div class="ui-block-b" style="background-color:white">無</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:50px">通訊協定</div>
+                   <div class="ui-block-b" >2G GSM 四頻、3G WCDMA 850 + 900 + 2100</div>
+                   <div class="ui-block-b" >4G LTE 700 + 900 + 1800 + FDD 2600 + TDD 2600</div>
+               </div>  
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">雙卡雙待</div>
+                   <div class="ui-block-b" style="background-color:white">有</div>
+               </div>  
+               <div class="ui-grid-a" id="camera">
+                    <div class="ui-block-c" style="font-weight: bold;height:425px">相機功能</div>
+                    <script>
+                       var camera_array=['主相機 1200 萬像素','前相機 1200 萬像素','LED 閃光燈','自動對焦','錄影 4K 60FPS','主相機雙鏡頭','最高五倍數位變焦','人像模式 (散景效果與景深控制)','人像光線具備六種效果','全景模式 6300 萬畫素','100% Focus Pixels (廣角)','夜間模式','新一代智慧 HDR','QuickTake 快速錄影功能','4K 錄影 (24/30/60FPS)、音訊變焦','1080p 慢動作影片 (120/240FPS)','前相機支援 4K 60FPS 錄影、1080p 120FPS 慢動作影片'];
+                       for(var i=0;i<camera_array.length;i++)$("#camera").append('<div class="ui-block-b">'+camera_array[i]+'</div>');
+                   </script>
+                   <!-- <div class="ui-block-b">主相機 1200 萬像素</div>
+                   <div class="ui-block-b">前相機 1200 萬像素</div>
+                   <div class="ui-block-b">LED 閃光燈</div>
+                   <div class="ui-block-b">自動對焦</div>
+                   <div class="ui-block-b">錄影 4K 60FPS</div>
+                   <div class="ui-block-b">主相機雙鏡頭</div>
+                   <div class="ui-block-b">最高五倍數位變焦</div>
+                   <div class="ui-block-b">人像模式 (散景效果與景深控制)</div>
+                   <div class="ui-block-b">人像光線具備六種效果</div>
+                   <div class="ui-block-b">全景模式 6300 萬畫素</div>
+                   <div class="ui-block-b">100% Focus Pixels (廣角)</div>
+                   <div class="ui-block-b">夜間模式</div>
+                   <div class="ui-block-b">新一代智慧 HDR</div>
+                   <div class="ui-block-b">QuickTake 快速錄影功能</div>
+                   <div class="ui-block-b">4K 錄影 (24/30/60FPS)、音訊變焦</div>
+                   <div class="ui-block-b">1080p 慢動作影片 (120/240FPS)</div>
+                   <div class="ui-block-b">前相機支援 4K 60FPS 錄影、1080p 120FPS 慢動作影片</div> -->
+               </div>
+               <div class="ui-grid-a" id="Multimedia">
+                   <div class="ui-block-c" style="font-weight: bold;background-color:white">多媒體</div>
+                   <script>
+                       var Multimedia_array=['立體聲雙喇叭','A2DP藍牙立體聲','Dolby Vision、HDR10','AirPlay 鏡像輸出','最長 17 小時影片播放電力','最長 65 小時音樂播放電力'];
+                       for(var i=0;i<Multimedia_array.length;i++)$("#Multimedia").append('<div class="ui-block-b" style="background-color:white">'+Multimedia_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="network">
+                   <div class="ui-block-c" style="font-weight: bold;height: 175px;">連結與網路</div>
+                   <script>
+                       var network_array=['Wi-Fi','藍牙 v5.0','GPS','USB 2.0','NFC','LTE 2x2 MIMI、LAA','WiFi 6 2x2 MIMO'];
+                       for(var i=0;i<network_array.length;i++)$("#network").append('<div class="ui-block-b" >'+network_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="sensor">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">感應器</div>
+                   <script>
+                       var sensor_array=['Face ID','氣壓感測器、三軸陀螺儀、加速度計、接近感測器、環境光度感測器','內建全球定位系統 (GPS)/全球導航衛星系統 (GNSS)'];
+                       for(var i=0;i<sensor_array.length;i++)$("#sensor").append('<div class="ui-block-b" style="background-color:white">'+sensor_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">指紋辨識</div>
+                  <div class="ui-block-b">無</div>
+               </div>
+               <div class="ui-grid-a" id="battery">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">電池</div>
+                   <script>
+                       var battery_array=['3110 mAh (固定式)','通話 N/A 分鐘','待機 N/A 小時'];
+                       for(var i=0;i<battery_array.length;i++)$("#battery").append('<div class="ui-block-b" style="background-color:white">'+battery_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">顏色</div>
+                  <div class="ui-block-b">黑色、綠色、黃色、紫色、紅色、白色</div>
+               </div>
+               <div class="ui-grid-a" id="other">
+                   <div class="ui-block-c" style="font-weight: bold;height: 50px;background-color:white">其它
+                   </div>
+                   <script>
+                       var other_array=['18W 快速充電 (充電器另購)','無線充電 (Qi 標準，充電器另購)'];
+                       for(var i=0;i<other_array.length;i++)$("#other").append('<div class="ui-block-b" style="background-color:white">'+other_array[i]+'</div>');
+                   </script>
+               </div>
+               <a href="https://www.apple.com/tw/iphone-11/">官網</a> 
             </div>
         </div>
-        <!-- 美國隊長 Page: Content  -->
-        <div id="Content2" data-role="page">
+        <!-- Samsung Galaxy Note 10+ Page: Content  -->
+        <div id="cellphone2" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>智慧型手機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Iron Man</div>
-                <div><img src="image/Hellow world.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Samsung Galaxy Note 10+</div>
+                <div><img src="https://image-us.samsung.com/us/smartphones/galaxy-note10/gallery/aura_glow_n10plus/21_RFP_4A22i14CI_2_Front_Back_LockUps_AuraGlow_RGB.jpg?$product-details-jpg$" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                    Note 10 系列推出二款機種，是針對不同族群所打造。螢幕較大的 Note 10+ 主要設計給 Note 系列老用戶，訴求更大的螢幕、更高的效能以及更智慧電池；<br>
+                    而 Note 10 則設計給 Note 系列的新用戶，訴求是輕巧體積、S Pen 功能以及最新技術。兩機除了大小不一樣以外，在許多規格上都有差異。<br>
+                    首先在螢幕部分，Note 10 搭載 6.3 吋 Dynamic AMOLED 螢幕面板，解析度為 2280 x 1080 畫素；而 Note 10+ 則擁有 6.8 吋 Dynamic AMOLED 螢幕，解析度為 3040 x 1440 畫素，兩機的螢幕都通過 HDR10+ 認證，並內建超音波螢幕指紋辨識器。<br>
+                    而因為兩款 Note 10 機種都採用了 O 極限螢幕（Infinity-O Display），因此螢幕佔比更加提升，Note 10 螢幕佔比達 94.2%、Note 10+ 則有 93.7% 螢幕佔比，從正面看去，螢幕邊框非常的細。
+                </p>
+                <h3>詳細規格</h3><br><br>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">尺寸</div>
+                   <div class="ui-block-b">162.3 x 77.2 x 7.9 mm</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">重量</div>
+                   <div class="ui-block-b" style="background-color:white">196g</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">SIM 卡</div>
+                   <div class="ui-block-b">nanoSIM</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">防水防塵</div>
+                   <div class="ui-block-b" style="background-color:white">IP68</div>
+                </div>
+                <div class="ui-grid-a" id="Screen2">
+                    <div class="ui-block-c" style="height:100px">螢幕技術</div>
+                    <script>
+                        var Screen2_array=['6.8 吋 3040 x 1440 Dynamic AMOLED','Infinity-O 螢幕','Dynamic AMOLED HDR+ 螢幕技術','超聲波螢幕下指紋辨識功能'];
+                        for(var i=0;i<Screen2_array.length;i++)$("#Screen2").append('<div class="ui-block-b">'+Screen2_array[i]+'</div>');
+                    </script>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">作業系統</div>
+                   <div class="ui-block-b" style="background-color:white">Android 9.0</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">處理器</div>
+                   <div class="ui-block-b">八核心 Qualcomm S855</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶體</div>
+                   <div class="ui-block-b" style="background-color:white">12GB RAM</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">儲存空間</div>
+                   <div class="ui-block-b">256GB (實際可用空間較此值少)</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶卡</div>
+                   <div class="ui-block-b" style="background-color:white">microSD (最大支援容量 1TB) ，與 SIM 卡共用卡槽</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:50px">通訊協定</div>
+                   <div class="ui-block-b" >2G GSM 四頻、3G WCDMA 850 + 900 + 2100</div>
+                   <div class="ui-block-b" >4G LTE 700 + 900 + 1800 + FDD 2600</div>
+               </div>  
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">雙卡雙待</div>
+                   <div class="ui-block-b" style="background-color:white">有</div>
+               </div>  
+               <div class="ui-grid-a" id="camera2">
+                    <div class="ui-block-c" style="font-weight: bold;height:225px">相機功能</div>
+                    <script>
+                       var camera2_array=['主相機 1200 萬像素','前相機 1000 萬像素','LED 閃光燈','自動對焦','錄影 4K 60FPS','極致防手震攝錄：支援超廣角/廣角攝錄模式及縮時模式','支援景深即時預覽影片','支援焦點收音','960fps 超慢動作'];
+                       for(var i=0;i<camera2_array.length;i++)$("#camera2").append('<div class="ui-block-b">'+camera2_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="Multimedia2">
+                   <div class="ui-block-c" style="font-weight: bold;background-color:white;height: 50px;" >多媒體</div>
+                   <script>
+                       var Multimedia2_array=['立體聲雙喇叭','A2DP藍牙立體聲'];
+                       for(var i=0;i<Multimedia2_array.length;i++)$("#Multimedia2").append('<div class="ui-block-b" style="background-color:white">'+Multimedia2_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="network2">
+                   <div class="ui-block-c" style="font-weight: bold;height: 125px;">連結與網路</div>
+                   <script>
+                       var network2_array=['Wi-Fi','藍牙 v5.0','GPS','USB','UFS3.0 閃存'];
+                       for(var i=0;i<network2_array.length;i++)$("#network2").append('<div class="ui-block-b" >'+network2_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="sensor2">
+                   <div class="ui-block-c" style="font-weight: bold;height: 50px;background-color:white">感應器</div>
+                   <script>
+                       var sensor2_array=['加速計，氣壓計，超聲波指紋感應器，陀螺儀感應器，地磁感應器','霍爾效應感測器，光感應器，距離感應器'];
+                       for(var i=0;i<sensor2_array.length;i++)$("#sensor2").append('<div class="ui-block-b" style="background-color:white">'+sensor2_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">指紋辨識</div>
+                  <div class="ui-block-b">無</div>
+               </div>
+               <div class="ui-grid-a" id="battery2">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">電池</div>
+                   <script>
+                       var battery2_array=['4300 mAh (固定式)','通話 N/A 分鐘','待機 N/A 小時'];
+                       for(var i=0;i<battery2_array.length;i++)$("#battery2").append('<div class="ui-block-b" style="background-color:white">'+battery2_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">顏色</div>
+                  <div class="ui-block-b">星環銀、星環黑、星環藍、星環白</div>
+               </div>
+               <div class="ui-grid-a" id="other2">
+                   <div class="ui-block-c" style="font-weight: bold;height: 125px;background-color:white">其它
+                   </div>
+                   <script>
+                       var other2_array=['Samsung Dex for PC/Mac','Samsung Knox','屏幕錄影','流動影片編輯工成室','S Pen Air actions手勢操作'];
+                       for(var i=0;i<other2_array.length;i++)$("#other2").append('<div class="ui-block-b" style="background-color:white">'+other2_array[i]+'</div>');
+                   </script>
+               </div>
+               <a href="https://www.samsung.com/tw/smartphones/galaxy-note10/">官網</a> 
             </div>
         </div>   
-        <!-- 蜘蛛人 Page: Content  -->
-        <div id="Content3" data-role="page">
+        <!-- ASUS ROG Phone 2 Page: Content  -->
+        <div id="cellphone3" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>智慧型手機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Spider Man</div>
-                <div><img src="image/hero03.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">ASUS ROG Phone 2</div>
+                <div><img src="https://img.eprice.com.tw/img/mobile/6162/large.png" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                    華碩在 2018 年首度推出掛上玩家共和國敗家之眼 logo 的智慧手機：ROG Phone，它針對手遊玩家的痛點做了許多貼心設計，此外也掛上強大規格，並針對它設計一大票周邊配件，一推出就創造極大話題。<br>
+                    經過一年，華碩也於 2019 年 7 月 22 日正式發表第二代電競手機：ROG Phone II，標榜「為贏而生」，它除了升級一些規格外，在配件方面也做了一些改良。
+                </p>
+                <h3>詳細規格</h3><br><br>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">尺寸</div>
+                   <div class="ui-block-b">170.99 x 77.6 x 9.48 mm</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">重量</div>
+                   <div class="ui-block-b" style="background-color:white">240g</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">SIM 卡</div>
+                   <div class="ui-block-b">nanoSIM</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">防水防塵</div>
+                   <div class="ui-block-b" style="background-color:white">無</div>
+                </div>
+                <div class="ui-grid-a" id="Screen3">
+                    <div class="ui-block-c" style="height:125px">螢幕技術</div>
+                    <script>
+                        var Screen3_array=['6.59 吋 2340 x 1080 AMOLED','120Hz 更新率、240Hz 觸控率','10000:1 對比、108% DCI-P3 顯示','10bit HDR、Delta E <1','Corning Gorilla Glass 6'];
+                        for(var i=0;i<Screen3_array.length;i++)$("#Screen3").append('<div class="ui-block-b">'+Screen3_array[i]+'</div>');
+                    </script>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">作業系統</div>
+                   <div class="ui-block-b" style="background-color:white">Android 9.0</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">處理器</div>
+                   <div class="ui-block-b">八核心 Qualcomm Snapdragon 855+</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶體</div>
+                   <div class="ui-block-b" style="background-color:white">12GB RAM</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">儲存空間</div>
+                   <div class="ui-block-b">512GB (實際可用空間較此值少)</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶卡</div>
+                   <div class="ui-block-b" style="background-color:white">無</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:50px">通訊協定</div>
+                   <div class="ui-block-b" >2G GSM 四頻、3G WCDMA 850 + 900 + 2100</div>
+                   <div class="ui-block-b" >4G LTE 700 + 900 + 1800 + FDD 2600 + TDD 2600</div>
+               </div>  
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">雙卡雙待</div>
+                   <div class="ui-block-b" style="background-color:white">有</div>
+               </div>  
+               <div class="ui-grid-a" id="camera3">
+                    <div class="ui-block-c" style="font-weight: bold;height:350px">相機功能</div>
+                    <script>
+                       var camera3_array=['主相機 4800 萬像素','前相機 2400 萬像素','LED 閃光燈','自動對焦','錄影 4K 60FPS','雙主鏡頭','2x1 OCL PDAF','雷射對焦','錄影三軸 EIS','即時變形校正','自動拍攝全景、自動追蹤物件、任意角度拍攝','HDR+ 強化','超級夜景模式','人像景深模式以及美顏模式'];
+                       for(var i=0;i<camera3_array.length;i++)$("#camera3").append('<div class="ui-block-b">'+camera3_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="Multimedia3">
+                   <div class="ui-block-c" style="font-weight: bold;background-color:white;height: 75px;">多媒體</div>
+                   <script>
+                       var Multimedia3_array=['立體聲雙喇叭','A2DP藍牙立體聲','支援 DTS:X Ultra'];
+                       for(var i=0;i<Multimedia3_array.length;i++)$("#Multimedia3").append('<div class="ui-block-b" style="background-color:white">'+Multimedia3_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="network3">
+                   <div class="ui-block-c" style="font-weight: bold;height: 275px;">連結與網路</div>
+                   <script>
+                       var network3_array=['Wi-Fi','藍牙 v5.0','GPS','USB 3.1','NFC','3.5mm 耳機孔','802.11a/b/g/n/ac/ad (5G, 2x2 MIMO)','Wi-Fi Direct','*802.11ad 為螢幕無線輸出用','藍牙（EDR+A2DP）','HFP+A2DP+AVRCP+HID+PAN+OPP'];
+                       for(var i=0;i<network3_array.length;i++)$("#network3").append('<div class="ui-block-b" >'+network3_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="sensor3">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">感應器</div>
+                   <script>
+                       var sensor3_array=['螢幕指紋辨識感應器 / 人臉辨識 / 重力感應器 / 電子羅盤 / 陀螺儀','距離感應器 / 霍爾感應器 / 光源感應器','超音波感壓器 (AirTriggers II 超音波觸控鍵) / 雙震動馬達'];
+                       for(var i=0;i<sensor3_array.length;i++)$("#sensor3").append('<div class="ui-block-b" style="background-color:white">'+sensor3_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">指紋辨識</div>
+                  <div class="ui-block-b">有</div>
+               </div>
+               <div class="ui-grid-a" id="battery3">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">電池</div>
+                   <script>
+                       var battery3_array=['6000 mAh (固定式)','通話 N/A 分鐘','待機 N/A 小時'];
+                       for(var i=0;i<battery3_array.length;i++)$("#battery3").append('<div class="ui-block-b" style="background-color:white">'+battery3_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">顏色</div>
+                  <div class="ui-block-b">幻影黑</div>
+               </div>
+               <div class="ui-grid-a" id="other3">
+                   <div class="ui-block-c" style="font-weight: bold;height: 25px;background-color:white">其它
+                   </div>
+                   <script>
+                       var other3_array=['光學螢幕指紋辨識器'];
+                       for(var i=0;i<other3_array.length;i++)$("#other3").append('<div class="ui-block-b" style="background-color:white">'+other3_array[i]+'</div>');
+                   </script>
+               </div>
+               <a href="https://www.asus.com/tw/Phone/ROG-Phone-II/">官網</a> 
             </div>
         </div>
-        <!-- 浩克 Page: Content  -->
-        <div id="Content4" data-role="page">
+        <!-- SONY Xperia 5 Page: Content  -->
+        <div id="cellphone4" data-role="page">
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
+                <h3>智慧型手機</h3>
                 <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
             </div>
             <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Hulk</div>
-                <div><img src="image/hero04.jpg" style="width:100%;"></div>
+                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">SONY Xperia 5</div>
+                <div><img src="https://img.eprice.com.tw/img/mobile/6184/large.png" style="width:100%;"></div>
+                <h3>介紹</h3>
+                <p>
+                    Sony 正式在 IFA 2019 柏林消費電子暨家電用品展中，推出了 2019 下半年最新款的 Xperia 旗艦級新手機，名稱也確定並非先前流傳的 Xperia 2 或是 Xperia 1s，而是「Xperia 5」<br>
+                    這款旗艦低的定位雖然低於 Xperia 1，但卻承襲了許多來自於 Xperia 1 的特點，不僅處理器、相機規格和 Xperia 1 看齊，同時具備更加小巧好掌握的機身尺寸。
+                </p>
+                <h3>詳細規格</h3><br><br>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">尺寸</div>
+                   <div class="ui-block-b">158 x 68 x 8.2 mm</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">重量</div>
+                   <div class="ui-block-b" style="background-color:white">164g</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">SIM 卡</div>
+                   <div class="ui-block-b">nanoSIM</div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">防水防塵</div>
+                   <div class="ui-block-b" style="background-color:white">IP68</div>
+                </div>
+                <div class="ui-grid-a" id="Screen4">
+                    <div class="ui-block-c" style="height:125px">螢幕技術</div>
+                    <script>
+                        var Screen4_array=['6.1 吋 2520 x 1080 OLED','Gorilla Glass 6','BT.2020, DCI-P3 100%, D65 white point, 10bit tonal gradution','X1 for Mobile 顏色更亮更鮮豔','Creator Mode 畫面更接近創作者創作的效果'];
+                        for(var i=0;i<Screen4_array.length;i++)$("#Screen4").append('<div class="ui-block-b">'+Screen4_array[i]+'</div>');
+                    </script>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">作業系統</div>
+                   <div class="ui-block-b" style="background-color:white">Android 9.0</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">處理器</div>
+                   <div class="ui-block-b">八核心 Qualcomm Snapdrogan 855</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶體</div>
+                   <div class="ui-block-b" style="background-color:white">6GB RAM</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px">儲存空間</div>
+                   <div class="ui-block-b">128GB (實際可用空間較此值少)</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:25px;background-color:white">記憶卡</div>
+                   <div class="ui-block-b" style="background-color:white">microSD (最大支援容量 512GB) ，與 SIM 卡共用卡槽</div>
+               </div>
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="height:50px">通訊協定</div>
+                   <div class="ui-block-b" >2G GSM 四頻、3G WCDMA 850 + 900 + 2100</div>
+                   <div class="ui-block-b" >4G LTE 700 + 900 + 1800 + FDD 2600</div>
+               </div>  
+               <div class="ui-grid-a">
+                    <div class="ui-block-c" style="font-weight: bold;height:25px;background-color:white">雙卡雙待</div>
+                   <div class="ui-block-b" style="background-color:white">有</div>
+               </div>  
+               <div class="ui-grid-a" id="camera4">
+                    <div class="ui-block-c" style="font-weight: bold;height:275px">相機功能</div>
+                    <script>
+                       var camera4_array=['主相機 1200 萬像素','前相機 800 萬像素','LED 閃光燈','自動對焦','錄影 4K 60FPS','2X光學變焦、5X數碼變焦','Cinema Pro','BIONZ X for mobile','眼控對焦','RAW 雜訊控制','3D Creator'];
+                       for(var i=0;i<camera4_array.length;i++)$("#camera4").append('<div class="ui-block-b">'+camera4_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="Multimedia4">
+                   <div class="ui-block-c" style="font-weight: bold;background-color:white;height: 225px;">多媒體</div>
+                   <script>
+                       var Multimedia4_array=['A2DP藍牙立體聲','Dolby Atmos®','立體聲揚聲器','高解析度音訊、高解析度音訊 (無線) (支援的音訊格式：LPCM、FLAC、ALAC、DSD)','LDAC','DSEE HXTM','立體聲錄製','Qualcomm® aptXTM 高清音訊','支援的音訊格式：AAC (AAC-LC、AAC+、eAAC+、AAC-ELD)、ALAC、AMR-NB、DSD、FLAC、MIDI、MP3、PCM、WMA'];
+                       for(var i=0;i<Multimedia4_array.length;i++)$("#Multimedia4").append('<div class="ui-block-b" style="background-color:white">'+Multimedia4_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="network4">
+                   <div class="ui-block-c" style="font-weight: bold;height: 125px;">連結與網路</div>
+                   <script>
+                       var network4_array=['Wi-Fi','藍牙 v5.0','GPS','USB 3.1','NFC'];
+                       for(var i=0;i<network4_array.length;i++)$("#network4").append('<div class="ui-block-b" >'+network4_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a" id="sensor4">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">感應器</div>
+                   <script>
+                       var sensor4_array=['加速計、環境光度感應器、氣壓感應器、eCompassTM、指紋感應器','遊戲旋轉矢量、地磁旋轉矢量、迴轉儀、霍爾感應器、磁力儀','計步器、步行偵測器、運動探測器、近距感應器、RGBC-IR 感測器'];
+                       for(var i=0;i<sensor4_array.length;i++)$("#sensor4").append('<div class="ui-block-b" style="background-color:white">'+sensor4_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">指紋辨識</div>
+                  <div class="ui-block-b">有</div>
+               </div>
+               <div class="ui-grid-a" id="battery4">
+                   <div class="ui-block-c" style="font-weight: bold;height: 75px;background-color:white">電池</div>
+                   <script>
+                       var battery4_array=['3140 mAh (固定式)','通話 N/A 分鐘','待機 N/A 小時'];
+                       for(var i=0;i<battery4_array.length;i++)$("#battery4").append('<div class="ui-block-b" style="background-color:white">'+battery4_array[i]+'</div>');
+                   </script>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-c" style="font-weight: bold;height:25px">顏色</div>
+                  <div class="ui-block-b">璃光黑、璃光灰、璃光藍、璃光紅</div>
+               </div>
+               <div class="ui-grid-a" id="other4">
+                   <div class="ui-block-c" style="font-weight: bold;height: 25px;background-color:white">其它
+                   </div>
+                   <script>
+                       var other4_array=['6.1吋 FHD+ 21:9 CinemaWideTM 屏幕'];
+                       for(var i=0;i<other4_array.length;i++)$("#other4").append('<div class="ui-block-b" style="background-color:white">'+other4_array[i]+'</div>');
+                   </script>
+               </div>
+               <a href="https://www.sony-xperia.com.tw/productdetail.aspx?id=116&gclid=Cj0KCQjw9fntBRCGARIsAGjFq5G69oT3Yq2PszWJGQafaqFzGwQPZpvpNTfMxueS9VBkYuGtmohwAyIaAgVsEALw_wcB#/info/iphonesp">官網</a>
             </div>
         </div>
-        
-        <!-- 雷神索爾 Page: Content  -->
-        <div id="Content5" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="b">
-                <h3>Story</h3>
-                <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
-            </div>
-            <div class="ui-content">
-                <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">Thor</div>
-                <div><img src="image/hero05.jpg" style="width:100%;"></div>
-            </div>
-        </div>
+
 </body>
 </html>
