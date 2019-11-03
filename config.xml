@@ -3,9 +3,9 @@
 <!-- versionCode is optional and Android only -->
   <!-- APP名子 -->
   <!-- 可以使用中文 -->
-  <name>休閒資訊</name>
+  <name>Entertainment news</name>
   <description>
-      An 休閒資訊 build APP from 10863106@gm.nfu.edu.tw.
+      An 娛樂資訊 build APP from 10863106@gm.nfu.edu.tw.
   </description>
   <author href="https://www.nfu.edu.tw/zh/" email="10863106@gm.nfu.edu.tw">
       CI-FONG LIN
@@ -13,10 +13,10 @@
   <content src="index.html" />
   <platform name="android">
     <!-- APP的圖示 -->
-    <icon src="res/map.png" />
-    <icon src="res/android/map.png" density="ldpi" />
-    <icon src="res/android/map.png" density="mdpi" />
-    <icon src="res/android/map.png" density="hdpi" />
-    <icon src="res/android/map.png" density="xhdpi" />
+    <icon src="res/magic.png" />
+    <icon src="res/android/magic.png" density="ldpi" />
+    <icon src="res/android/magic.png" density="mdpi" />
+    <icon src="res/android/magic.png" density="hdpi" />
+    <icon src="res/android/magic.png" density="xhdpi" />
   </platform>
 </widget>
