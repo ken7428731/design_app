@@ -11,6 +11,21 @@
       CI-FONG LIN
   </author>
   <content src="index.html" />
+  <allow-navigation href="http://example.com/*" />
+
+  <!-- Wildcards are allowed for the protocol, as a prefix
+     to the host, or as a suffix to the path -->
+  <allow-navigation href="*://*.example.com/*" />
+
+  <!-- A wildcard can be used to whitelist the entire network,
+     over HTTP and HTTPS.
+     *NOT RECOMMENDED* -->
+  <allow-navigation href="*" />
+
+  <!-- The above is equivalent to these three declarations -->
+  <allow-navigation href="http://*/*" />
+  <allow-navigation href="https://*/*" />
+  <allow-navigation href="data:*" />
   <platform name="android">
     <!-- APP的圖示 -->
     <icon src="res/magic.png" />
@@ -19,4 +34,8 @@
     <icon src="res/android/magic.png" density="hdpi" />
     <icon src="res/android/magic.png" density="xhdpi" />
   </platform>
+    <!-- Allow links to example.com -->
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.1" />
+    <plugin name="cordova-plugin-network-information" spec="~1.3.3" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
 </widget>
